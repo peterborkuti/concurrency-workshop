@@ -24,7 +24,11 @@ public class Util {
 	public static void sleep(int fix, int rand) {
 		Random r = new Random();
 		try {
-			Thread.sleep(fix + r.nextInt(rand));
+			long sleep = fix + (rand <= 0 ? 0 : r.nextInt(rand));
+
+			log("Sleeping for... " + sleep);
+
+			Thread.sleep(sleep);
 		} catch (InterruptedException e) {
 			Thread.currentThread().interrupt();
 		}
