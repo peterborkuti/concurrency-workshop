@@ -40,22 +40,20 @@ Semaphores
     There are 4 washing machines. People are coming to wash their clothes. A washing
     takes T minutes.
 
-3. Bycicle-shed
+3. BycicleShed
     There are M places for bycicles
-2. Dishwashers
-  See in the book
 
-3. Authors
-  5 authors: sleeping, waiting for a pen, writing. 3 pens.
+4. RailwayStation
+	There are N places for the trains to stay.
 
-4. Automatic Traffic Light
-  Light: red. Green for a given time if there is a car in front of it.
+CyclicBarrier
+--------------
+1. SwimminRace01
+	There is a pool with N lane. There are swimmers coming to swim. If there are exactly N, they are started to swim.
+	Swimmers want to got to the sauna than go to the swimming pool again and again.
+	You should not take into account, that only N swimmers should be in the pool at the same time.
+	Organize only the start of the race.
+2. SwimminRace02
+	Take into account, that only ONE swimmer should be in one lane. So other swimmers should wait not only to each other to
+	gather but for the previous race to finish.
 
-5. Two dependent automatic traffic light
-  Green for a given time if there is a car in front of it and the other light is not green
-
-6. Elevator1
-  Two stops (Up and Down). People waiting at the stops.
-
-7. Elevator2
-  N stops. People waiting at the stops and when get in, choose a random Stop.
